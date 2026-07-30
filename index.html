@@ -1,0 +1,625 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paulina Leiva | Portafolio Creativo UX/UI</title>
+    
+    <!-- Meta Etiquetas de SEO -->
+    <meta name="description" content="Portafolio Profesional de Paulina Leiva. Especialista en diseño de interfaz (UX/UI), branding y desarrollo de experiencias web interactivas utilizando colores negro, gris y matices violetas." />
+    <meta name="keywords" content="Paulina Leiva, Portafolio, UX/UI, Diseño Web, Branding, Front-end, Figma, React, Creativo" />
+    <meta name="author" content="Paulina Leiva" />
+
+    <!-- ========================================== -->
+    <!-- COMIENZO: CONTROL DE TRÁFICO Y SEGUIMIENTO -->
+    <!-- Placeholders para Campañas de Redes Sociales, Meta Pixel e Identificación de Visitantes -->
+    <!-- ========================================== -->
+    <script>
+      // Placeholder para Pixel de Meta (Facebook/Instagram Ads)
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      // Reemplace 'NUMERO_DE_PIXEL_AQUI' con su identificador real de campaña
+      fbq('init', 'NUMERO_DE_PIXEL_AQUI');
+      fbq('track', 'PageView');
+    </script>
+
+    <!-- Placeholder para Google Analytics (Seguimiento de Visitantes Únicos) -->
+    <!-- Descomente e ingrese su ID de medición de Google Analytics (G-XXXXXXXXXX) para registrar métricas de audiencia -->
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-METRICAS_AQUI"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-METRICAS_AQUI');
+    </script>
+    -->
+    <!-- ========================================== -->
+    <!-- FIN: SCRIPT DE SEGUIMIENTO -->
+    <!-- ========================================== -->
+
+    <!-- Archivo principal de Estilos -->
+    <link rel="stylesheet" href="/src/index.css" />
+  </head>
+  <body class="bg-gray-dark text-white font-sans antialiased selection:bg-purple-accent selection:text-white relative">
+    
+    <!-- Meta Pixel Fallback Noscript (Reubicado para cumplimiento de estándar) -->
+    <noscript>
+      <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=NUMERO_DE_PIXEL_AQUI&ev=PageView&noscript=1" />
+    </noscript>
+    
+    <!-- Efecto ambiental superior de iluminación violeta -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[600px] purple-gradient-glow pointer-events-none z-0"></div>
+
+    <!-- NAVBAR PRINCIPAL -->
+    <header id="main-header" class="fixed top-0 left-0 w-full z-40 transition-all duration-500 py-5 bg-transparent">
+      <div class="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
+        
+        <!-- Logo con peso e iniciales -->
+        <a href="index.html" class="group flex items-center gap-2 z-50">
+          <span class="w-10 h-10 bg-purple-accent hover:bg-purple-hover text-black font-extrabold flex items-center justify-center rounded-xl text-xl transition-all duration-300 shadow-[0_0_15px_rgba(139,92,246,0.3)]">PL</span>
+          <span class="font-bold tracking-wider text-xl text-white group-hover:text-purple-accent transition-colors duration-300">PAULINA <span class="text-purple-accent">LEIVA</span></span>
+        </a>
+
+        <!-- Enlaces en Escritorio -->
+        <nav class="hidden md:flex items-center gap-6 lg:gap-8">
+          <a href="#inicio" class="text-sm font-medium hover:text-purple-accent transition duration-300">Inicio</a>
+          <a href="#sobre-mi" class="text-sm font-medium hover:text-purple-accent transition duration-300">Sobre Mí</a>
+          <a href="proyectos.html" class="text-sm font-medium hover:text-purple-accent transition duration-300">Proyectos</a>
+          <a href="blog.html" class="text-sm font-medium hover:text-purple-accent transition duration-300">Blog</a>
+          <a href="contacto.html" class="text-sm font-medium text-purple-light hover:text-purple-accent transition duration-300 flex items-center gap-1">
+            Contacto
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </a>
+          <!-- Botón de Descargar CV junto al menú -->
+          <a href="#" class="cv-download-btn inline-flex items-center gap-2 px-4 py-2 bg-purple-accent hover:bg-purple-hover text-black font-semibold rounded-xl text-xs tracking-wide uppercase transition-all duration-300 shadow-[0_0_15px_rgba(139,92,246,0.3)] hover:scale-105 cursor-pointer">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"></path>
+            </svg>
+            Descargar CV
+          </a>
+        </nav>
+
+        <!-- Botón Menú Móvil -->
+        <div class="flex items-center gap-3">
+          <!-- Botón de acceso directo en Mobile -->
+          <a href="#" class="cv-download-btn md:hidden inline-flex items-center gap-1.5 px-3 py-1.5 bg-purple-accent hover:bg-purple-hover text-black font-bold rounded-xl text-[11px] uppercase transition cursor-pointer shadow-[0_0_10px_rgba(139,92,246,0.3)]">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"></path>
+            </svg>
+            CV
+          </a>
+
+          <!-- Botón de Hamburguesa para Mobile -->
+          <button id="burger-btn" class="md:hidden p-2 text-white bg-gray-medium/80 border border-white/10 rounded-xl hover:bg-purple-accent/10 transition z-50 cursor-pointer" aria-label="Menú">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Menú Desplegable Móvil -->
+      <div id="mobile-menu" class="fixed inset-x-0 top-0 bg-gray-medium/98 backdrop-blur-lg border-b border-white/5 pt-24 pb-8 px-6 transition-all duration-500 transform -translate-y-full opacity-0 pointer-events-none flex flex-col gap-5 z-30">
+        <a href="#inicio" class="text-lg font-medium py-2 border-b border-white/5 hover:text-purple-accent transition">Inicio</a>
+        <a href="#sobre-mi" class="text-lg font-medium py-2 border-b border-white/5 hover:text-purple-accent transition">Sobre Mí</a>
+        <a href="proyectos.html" class="text-lg font-medium py-2 border-b border-white/5 hover:text-purple-accent transition">Proyectos</a>
+        <a href="blog.html" class="text-lg font-medium py-2 border-b border-white/5 hover:text-purple-accent transition">Blog</a>
+        <a href="contacto.html" class="text-lg font-semibold py-2 border-b border-white/5 text-purple-accent flex items-center justify-between">
+          Área de Contacto
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </a>
+        <a href="#" class="cv-download-btn w-full mt-4 py-3.5 bg-purple-accent hover:bg-purple-hover text-black font-semibold rounded-xl text-center flex items-center justify-center gap-2 text-sm transition">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"></path>
+          </svg>
+          Descargar Currículum (PDF)
+        </a>
+      </div>
+    </header>
+
+    <!-- MAIN BODY -->
+    <main class="relative z-10 pt-28">
+
+      <!-- SECCIÓN HERO: PRESENTACIÓN PRINCIPAL -->
+      <section id="inicio" class="max-w-7xl mx-auto px-6 md:px-12 py-12 md:py-28">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          
+          <!-- Columna Izquierda: Información de Bienvenida -->
+          <div class="lg:col-span-7 flex flex-col items-start text-left space-y-6 md:space-y-8">
+            <!-- Tagline de Especialidad -->
+            <div class="reveal inline-flex items-center gap-2 px-4 py-2 bg-purple-accent/10 border border-purple-accent/20 rounded-full text-xs font-semibold tracking-widest uppercase text-purple-light">
+              <span class="w-2 h-2 rounded-full bg-purple-accent animate-ping"></span>
+              Diseño Visual & Conceptos Interactivos
+            </div>
+
+            <!-- Título principal editable en Poppins -->
+            <h1 class="reveal font-sans font-extrabold text-4xl sm:text-5xl md:text-6xl tracking-tight text-white leading-[1.1] max-w-2xl">
+              Bienvenido a mi <span class="text-purple-accent relative inline-block">portafolio de trabajos<span class="absolute bottom-1 sm:bottom-2 left-0 w-full h-1 sm:h-2 bg-purple-accent/20 -z-10"></span></span>
+            </h1>
+
+            <!-- Subtítulo / Descripción -->
+            <p class="reveal font-sans font-light text-base sm:text-lg text-gray-400 max-w-xl leading-relaxed">
+              Hola, soy <strong class="text-white font-medium">Paulina Leiva</strong>. Creo interfaces sofisticadas de diseño interactivo que combinan jerarquía estética, color y código con coherencia rigurosa para crear conexiones humanas memorables.
+            </p>
+
+            <!-- CTAs -->
+            <div class="reveal flex flex-col sm:flex-row gap-4 w-full sm:w-auto pt-2">
+              <a href="proyectos.html" class="w-full sm:w-auto px-8 py-4 bg-purple-accent hover:bg-purple-hover text-white sm:text-black font-semibold rounded-2xl text-sm transition-all duration-300 shadow-[0_5px_25px_rgba(139,92,246,0.35)] flex items-center justify-center gap-2 cursor-pointer">
+                Ver Portafolio de Proyectos
+                <svg class="w-4 h-4 text-white sm:text-black" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 13l-7 7-7-7m14-6l-7 7-7-7"></path>
+                </svg>
+              </a>
+              <a href="contacto.html" class="w-full sm:w-auto px-8 py-4 bg-gray-medium hover:bg-gray-light border border-white/10 hover:border-purple-accent/30 rounded-2xl text-sm font-semibold transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer">
+                Escribir un Mensaje
+              </a>
+            </div>
+          </div>
+
+          <!-- Columna Derecha: Ilustración de Guerrera del Espacio -->
+          <div class="lg:col-span-5 flex justify-center items-center relative">
+            <!-- Glow background effect targeted below image -->
+            <div class="absolute inset-x-0 w-72 h-72 bg-gradient-to-tr from-purple-accent to-indigo-600 rounded-full filter blur-[80px] opacity-30 animate-pulse"></div>
+            
+            <!-- Marco moderno del retrato -->
+            <div class="reveal reveal-right relative group rounded-3xl p-1.5 bg-gradient-to-tr from-white/10 to-purple-accent/20 border border-white/10 overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] transition duration-500 hover:scale-[1.02] hover:border-purple-accent/30 max-w-sm sm:max-w-md">
+              <div class="rounded-[1.4rem] overflow-hidden relative">
+                <img src="/src/assets/images/space_warrior_pastel_purple_1780868044909.png" alt="Retrato Guerrera Espacial Paulina Leiva" class="w-full h-auto object-cover group-hover:scale-105 transition duration-700" loading="lazy" referrerPolicy="no-referrer" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60"></div>
+                <!-- Pequeña etiqueta futurista opcional -->
+                <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between bg-black/60 backdrop-blur-md border border-white/10 rounded-xl px-4 py-2.5">
+                  <span class="text-[10px] font-mono text-purple-light uppercase tracking-wider">CREATIVE MISSION</span>
+                  <span class="text-[10px] font-mono text-gray-400">PL V.2026</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SECCIÓN ACERCA DE MÍ -->
+      <section id="sobre-mi" class="max-w-7xl mx-auto px-6 md:px-12 py-20 border-t border-white/5">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          
+          <!-- Lado Izquierdo: Biografía Visual -->
+          <div class="reveal reveal-left space-y-6">
+            <span class="text-xs font-mono font-bold tracking-widest uppercase text-purple-accent block">01 / FILOSOFÍA VISUAL</span>
+            <h2 class="text-3xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">
+              Alineación milimétrica para experiencias digitales memorables.
+            </h2>
+            <p class="text-gray-400 font-light leading-relaxed">
+              Descubrí que el buen diseño web no radica en la ornamentación, sino en la correcta jerga de contrastes y la distribución armónica del espacio. Diseñar sobre fondos oscuros requiere de una disciplina especial de legibilidad, donde el morado actúa no como accesorio, sino como un rayo de navegación para el usuario.
+            </p>
+            <p class="text-gray-400 font-light leading-relaxed">
+              Trabajo de forma cercana con marcas, ingenieros y agencias de crecimiento continuo, aportando claridad visual y transformando complejas arquitecturas de bases de datos en trazos elegantes y flujos comprensibles.
+            </p>
+
+            <!-- Grid de Habilidades Internas -->
+            <div class="grid grid-cols-2 gap-6 pt-6 border-t border-white/5">
+              <div class="flex items-start gap-3">
+                <span class="w-2.5 h-2.5 rounded-full bg-purple-accent mt-1.5 flex-shrink-0"></span>
+                <div>
+                  <h4 class="text-sm font-semibold text-white">UX / Research</h4>
+                  <p class="text-xs text-gray-500 mt-1">Pruebas cognitivas y wireframes de alta fidelidad.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="w-2.5 h-2.5 rounded-full bg-purple-accent mt-1.5 flex-shrink-0"></span>
+                <div>
+                  <h4 class="text-sm font-semibold text-white">Visual Design</h4>
+                  <p class="text-xs text-gray-500 mt-1">Identidades gráficas, branding y sistemas de diseño.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lado Derecho: Mis Habilidades (Enfoque de Especialización) -->
+          <div class="reveal reveal-right space-y-6">
+            <span class="text-xs font-mono font-bold tracking-widest uppercase text-purple-light block text-center lg:text-left">02 / MIS HABILIDADES & CLAVES</span>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              
+              <!-- UX/UI Card -->
+              <div class="bg-gray-medium/55 border border-white/10 p-6 rounded-2xl hover:border-purple-accent/30 transition-all duration-300 group">
+                <div class="flex items-center gap-3 mb-3">
+                  <div class="w-8 h-8 rounded-lg bg-purple-accent/10 border border-purple-accent/20 flex items-center justify-center text-purple-accent group-hover:bg-purple-accent group-hover:text-black transition-all duration-300">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                  </div>
+                  <h3 class="text-white font-semibold text-base">UX/UI</h3>
+                </div>
+                <p class="text-xs text-gray-400 font-light leading-relaxed">
+                  Planificación, wireframes de alta fidelidad, flujos y arquitectura de información con enfoque centrado en la facilidad de uso.
+                </p>
+              </div>
+
+              <!-- Figma Card -->
+              <div class="bg-gray-medium/55 border border-white/10 p-6 rounded-2xl hover:border-purple-accent/30 transition-all duration-300 group">
+                <div class="flex items-center gap-3 mb-3">
+                  <div class="w-8 h-8 rounded-lg bg-purple-accent/10 border border-purple-accent/20 flex items-center justify-center text-purple-accent group-hover:bg-purple-accent group-hover:text-black transition-all duration-300">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                      <path d="M12 2a4 4 0 0 0-4 4v2a4 4 0 0 0 4 4V2zm-4 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4v-8zm8 0H12a4 4 0 1 0 4-4v4zm0 4a4 4 0 1 0-4 4v-4z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+                    </svg>
+                  </div>
+                  <h3 class="text-white font-semibold text-base">Figma</h3>
+                </div>
+                <p class="text-xs text-gray-400 font-light leading-relaxed">
+                  Creación de robustos sistemas de diseño, componentes dinámicos con Auto Layout y prototipos avanzados animados.
+                </p>
+              </div>
+
+              <!-- Adobe Suite Card (photoshop, illustrator, indesign, premiere) -->
+              <div class="col-span-1 sm:col-span-2 bg-gray-medium/55 border border-white/10 p-6 rounded-2xl hover:border-purple-accent/30 transition-all duration-300 group">
+                <div class="flex items-center gap-3 mb-3">
+                  <div class="w-8 h-8 rounded-lg bg-purple-accent/10 border border-purple-accent/20 flex items-center justify-center text-purple-accent group-hover:bg-purple-accent group-hover:text-black transition-all duration-300">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                    </svg>
+                  </div>
+                  <h3 class="text-white font-semibold text-base">Adobe Suite</h3>
+                </div>
+                <p class="text-xs text-gray-400 font-light leading-relaxed mb-4">
+                  Manipulación técnica fotográfica, ilustración vectorial escalable, maquetación editorial impecable y montaje de videos.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-2.5 py-1 bg-black/40 border border-white/5 rounded-lg text-[11px] font-mono text-purple-light">Photoshop</span>
+                  <span class="px-2.5 py-1 bg-black/40 border border-white/5 rounded-lg text-[11px] font-mono text-purple-light">Illustrator</span>
+                  <span class="px-2.5 py-1 bg-black/40 border border-white/5 rounded-lg text-[11px] font-mono text-purple-light">InDesign</span>
+                  <span class="px-2.5 py-1 bg-black/40 border border-white/5 rounded-lg text-[11px] font-mono text-purple-light">Premiere</span>
+                </div>
+              </div>
+
+              <!-- SEO Card -->
+              <div class="bg-gray-medium/55 border border-white/10 p-6 rounded-2xl hover:border-purple-accent/30 transition-all duration-300 group">
+                <div class="flex items-center gap-3 mb-3">
+                  <div class="w-8 h-8 rounded-lg bg-purple-accent/10 border border-purple-accent/20 flex items-center justify-center text-purple-accent group-hover:bg-purple-accent group-hover:text-black transition-all duration-300">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                    </svg>
+                  </div>
+                  <h3 class="text-white font-semibold text-base">SEO</h3>
+                </div>
+                <p class="text-xs text-gray-400 font-light leading-relaxed">
+                  Optimización de metaetiquetas on-page, estándares de velocidad Core Web Vitals y posicionamiento orgánico estratégico.
+                </p>
+              </div>
+
+              <!-- Visual Studio Code Card -->
+              <div class="bg-gray-medium/55 border border-white/10 p-6 rounded-2xl hover:border-purple-accent/30 transition-all duration-300 group">
+                <div class="flex items-center gap-3 mb-3">
+                  <div class="w-8 h-8 rounded-lg bg-purple-accent/10 border border-purple-accent/20 flex items-center justify-center text-purple-accent group-hover:bg-purple-accent group-hover:text-black transition-all duration-300">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                    </svg>
+                  </div>
+                  <h3 class="text-white font-semibold text-base">VS Code</h3>
+                </div>
+                <p class="text-xs text-gray-400 font-light leading-relaxed">
+                  Maquetación frontend limpia y modulada utilizando estándares semánticos modernos con HTML, CSS, JavaScript y Tailwind.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SECCIÓN TRABAJOS / PROYECTOS -->
+      <section id="proyectos" class="max-w-7xl mx-auto px-6 md:px-12 py-20 border-t border-white/5">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+          <div class="reveal reveal-left space-y-4">
+            <span class="text-xs font-mono font-bold tracking-widest uppercase text-purple-accent block">02 / PORTAFOLIO SELECCIONADO</span>
+            <h2 class="text-3xl md:text-5xl font-extrabold text-white tracking-tight">
+              Trabajos Destacados
+            </h2>
+            <p class="text-gray-400 font-light max-w-xl">
+              Haz click en cualquiera de las tarjetas de abajo para acceder a la plantilla de desglose de proyectos de forma directa.
+            </p>
+          </div>
+          <div class="reveal reveal-right">
+            <span class="text-xs font-mono text-gray-500">Filtrado por: Dirección de Arte & Código</span>
+          </div>
+        </div>
+
+        <!-- Grid de Proyectos -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- Proyecto 1: Recibopagos -->
+          <article class="reveal group flex flex-col bg-gray-medium border border-white/10 rounded-3xl overflow-hidden hover:border-purple-accent/50 transition-all duration-500 hover:shadow-[0_15px_30px_rgba(139,92,246,0.15)] hover:-translate-y-2">
+            <div class="h-60 overflow-hidden relative">
+              <img src="/src/assets/images/recibopagos_diseno.png" alt="Recibopagos" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" loading="lazy" referrerPolicy="no-referrer" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-80"></div>
+              <span class="absolute top-4 left-4 px-3 py-1 bg-black/60 backdrop-blur-md text-[10px] font-mono font-bold uppercase tracking-wider rounded-lg text-purple-light border border-white/10">Destacado</span>
+            </div>
+            <div class="p-8 flex flex-col justify-between flex-grow">
+              <div class="space-y-3">
+                <span class="text-xs font-mono text-purple-light uppercase">Diseño UX/UI & Web App</span>
+                <h3 class="text-2xl font-bold text-white tracking-tight group-hover:text-purple-accent transition-colors duration-300">Recibopagos</h3>
+                <p class="text-sm text-gray-400 font-light leading-relaxed">
+                  Rediseño total de ecosistema de cobro: wireframes interactivos, piezas para redes sociales, email marketing y prototipo de app de pago.
+                </p>
+              </div>
+              <div class="pt-8 mt-4 border-t border-white/5 flex items-center justify-between">
+                <span class="text-xs font-mono text-gray-500">Cliente: Recibopagos S.A.</span>
+                <a href="proyecto.html?id=recibopagos" class="text-xs font-semibold text-white group-hover:text-purple-accent flex items-center gap-1.5 transition-colors">
+                  Ver Detalles 
+                  <svg class="w-3.5 h-3.5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyecto 2: Samsonite -->
+          <article class="reveal group flex flex-col bg-gray-medium border border-white/10 rounded-3xl overflow-hidden hover:border-purple-accent/50 transition-all duration-500 hover:shadow-[0_15px_30px_rgba(139,92,246,0.15)] hover:-translate-y-2">
+            <div class="h-60 overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80" alt="Samsonite" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" loading="lazy" referrerPolicy="no-referrer" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-80"></div>
+              <span class="absolute top-4 left-4 px-3 py-1 bg-black/60 backdrop-blur-md text-[10px] font-mono font-bold uppercase tracking-wider rounded-lg text-purple-light border border-white/10">Publicidad</span>
+            </div>
+            <div class="p-8 flex flex-col justify-between flex-grow">
+              <div class="space-y-3">
+                <span class="text-xs font-mono text-purple-light uppercase">Diseño Gráfico & Social Media</span>
+                <h3 class="text-2xl font-bold text-white tracking-tight group-hover:text-purple-accent transition-colors duration-300 font-sans">Samsonite</h3>
+                <p class="text-sm text-gray-400 font-light leading-relaxed">
+                  Compilación de piezas gráficas de alto rendimiento para redes sociales y web de campañas de Samsonite, Saxoline, Xtrem y Secret.
+                </p>
+              </div>
+              <div class="pt-8 mt-4 border-t border-white/5 flex items-center justify-between">
+                <span class="text-xs font-mono text-gray-500">Cliente: Samsonite Holding</span>
+                <a href="proyecto.html?id=samsonite" class="text-xs font-semibold text-white group-hover:text-purple-accent flex items-center gap-1.5 transition-colors">
+                  Ver Detalles 
+                  <svg class="w-3.5 h-3.5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyecto 3: CAT TOUR: Crissalida Tattoo -->
+          <article class="reveal group flex flex-col bg-gray-medium border border-white/10 rounded-3xl overflow-hidden hover:border-purple-accent/50 transition-all duration-500 hover:shadow-[0_15px_30px_rgba(139,92,246,0.15)] hover:-translate-y-2">
+            <div class="h-60 overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1590246814883-57c511e76523?auto=format&fit=crop&w=800&q=80" alt="CAT TOUR: Crissalida Tattoo" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" loading="lazy" referrerPolicy="no-referrer" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-80"></div>
+              <span class="absolute top-4 left-4 px-3 py-1 bg-black/60 backdrop-blur-md text-[10px] font-mono font-bold uppercase tracking-wider rounded-lg text-purple-light border border-white/10">Activación</span>
+            </div>
+            <div class="p-8 flex flex-col justify-between flex-grow">
+              <div class="space-y-3">
+                <span class="text-xs font-mono text-purple-light uppercase">Dirección de Arte & Activación</span>
+                <h3 class="text-2xl font-bold text-white tracking-tight group-hover:text-purple-accent transition-colors duration-300">CAT TOUR: "Crissalida Tattoo"</h3>
+                <p class="text-sm text-gray-400 font-light leading-relaxed">
+                  Dos sesiones fotográficas de primer nivel con la artista Cristina Monsalve para activaciones de tienda nacional de Caterpillar.
+                </p>
+              </div>
+              <div class="pt-8 mt-4 border-t border-white/5 flex items-center justify-between">
+                <span class="text-xs font-mono text-gray-500">Cliente: Caterpillar (CAT)</span>
+                <a href="proyecto.html?id=cattour" class="text-xs font-semibold text-white group-hover:text-purple-accent flex items-center gap-1.5 transition-colors">
+                  Ver Detalles 
+                  <svg class="w-3.5 h-3.5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Botón Ver Todos los Proyectos -->
+        <div class="reveal flex justify-center mt-12">
+          <a href="proyectos.html" class="inline-flex items-center gap-3 px-8 py-4 bg-gray-medium hover:bg-purple-accent/10 border border-white/10 hover:border-purple-accent/40 rounded-2xl font-bold text-white text-sm tracking-wide transition-all duration-300 shadow-md group cursor-pointer">
+            Ver Todos los Proyectos
+            <svg class="w-4 h-4 text-purple-accent transform group-hover:translate-x-1.5 transition-transform" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <!-- SECCIÓN BLOG PERSONAL -->
+      <section id="blog" class="max-w-7xl mx-auto px-6 md:px-12 py-20 border-t border-white/5">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+          <div class="reveal reveal-left space-y-4">
+            <span class="text-xs font-mono font-bold tracking-widest uppercase text-purple-accent block">03 / BITÁCORA Y PENSAMIENTO</span>
+            <h2 class="text-3xl md:text-5xl font-extrabold text-white tracking-tight">
+              Blog Personal
+            </h2>
+            <p class="text-gray-400 font-light max-w-xl">
+              Reflexiones técnicas y metodológicas sobre teoría del diseño, optimización de flujos y buenas prácticas de accesibilidad.
+            </p>
+          </div>
+          <div class="reveal reveal-right">
+            <a href="contacto.html" class="inline-flex items-center gap-2 group text-sm font-semibold text-purple-light hover:text-purple-accent transition">
+              ¿Escribimos un artículo juntos? Contáctame
+              <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Lista de Artículos -->
+        <div class="space-y-6">
+          
+          <!-- Artículo 1 -->
+          <article class="reveal group bg-gray-medium/50 hover:bg-gray-medium border border-white/5 hover:border-purple-accent/30 rounded-2xl p-6 md:p-8 transition-all duration-300 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+            <div class="space-y-2 max-w-3xl">
+              <div class="flex items-center gap-3 text-xs font-mono text-purple-light">
+                <span class="uppercase tracking-wider font-semibold">Diseño de Interfaz</span>
+                <span class="text-gray-600">•</span>
+                <span class="text-gray-400">May 25, 2026</span>
+              </div>
+              <h3 class="text-xl md:text-2xl font-bold text-white tracking-tight group-hover:text-purple-accent transition duration-300">
+                El Rol de la Psicología del Color en Productos Digitales
+              </h3>
+              <p class="text-sm text-gray-400 line-clamp-2 font-light">
+                Cómo el color violeta y los tonos oscuros moldean la percepción de valor e incentivan interacciones seguras y placenteras dentro de un embudo de conversión digital.
+              </p>
+            </div>
+            <div class="flex items-center gap-4 flex-shrink-0 w-full md:w-auto justify-between border-t md:border-t-0 border-white/5 pt-4 md:pt-0">
+              <span class="text-xs font-mono text-gray-500">5 min de lectura</span>
+              <a href="articulo.html?id=psicologia-color" class="px-5 py-2.5 bg-gray-medium group-hover:bg-purple-accent text-white group-hover:text-black font-semibold rounded-xl text-xs transition duration-300 flex items-center gap-1">
+                Leer Entrada
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Artículo 2 -->
+          <article class="reveal group bg-gray-medium/50 hover:bg-gray-medium border border-white/5 hover:border-purple-accent/30 rounded-2xl p-6 md:p-8 transition-all duration-300 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+            <div class="space-y-2 max-w-3xl">
+              <div class="flex items-center gap-3 text-xs font-mono text-purple-light">
+                <span class="uppercase tracking-wider font-semibold">Workflow & Automatización</span>
+                <span class="text-gray-600">•</span>
+                <span class="text-gray-400">Jun 02, 2026</span>
+              </div>
+              <h3 class="text-xl md:text-2xl font-bold text-white tracking-tight group-hover:text-purple-accent transition duration-300">
+                Optimización Crítica de Flujo de Trabajo con Figma y Vite
+              </h3>
+              <p class="text-sm text-gray-400 line-clamp-2 font-light">
+                Guía práctica de integración entre diseño y desarrollo tecnológico para agilizar la producción de código limpio a través de variables unificadas.
+              </p>
+            </div>
+            <div class="flex items-center gap-4 flex-shrink-0 w-full md:w-auto justify-between border-t md:border-t-0 border-white/5 pt-4 md:pt-0">
+              <span class="text-xs font-mono text-gray-500">8 min de lectura</span>
+              <a href="articulo.html?id=workflow-creativo" class="px-5 py-2.5 bg-gray-medium group-hover:bg-purple-accent text-white group-hover:text-black font-semibold rounded-xl text-xs transition duration-300 flex items-center gap-1">
+                Leer Entrada
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Artículo 3 -->
+          <article class="reveal group bg-gray-medium/50 hover:bg-gray-medium border border-white/5 hover:border-purple-accent/30 rounded-2xl p-6 md:p-8 transition-all duration-300 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+            <div class="space-y-2 max-w-3xl">
+              <div class="flex items-center gap-3 text-xs font-mono text-purple-light">
+                <span class="uppercase tracking-wider font-semibold">Accesibilidad</span>
+                <span class="text-gray-600">•</span>
+                <span class="text-gray-400">May 12, 2026</span>
+              </div>
+              <h3 class="text-xl md:text-2xl font-bold text-white tracking-tight group-hover:text-purple-accent transition duration-300">
+                Interfaces Inclusivas: Accesibilidad en Fondos Oscuros
+              </h3>
+              <p class="text-sm text-gray-400 line-clamp-2 font-light">
+                Estándares y contrastes de color WCAG obligatorios para que tu sitio nocturno sea legible para todas las personas sin perder elegancia de marca.
+              </p>
+            </div>
+            <div class="flex items-center gap-4 flex-shrink-0 w-full md:w-auto justify-between border-t md:border-t-0 border-white/5 pt-4 md:pt-0">
+              <span class="text-xs font-mono text-gray-500">6 min de lectura</span>
+              <a href="articulo.html?id=accesibilidad-interfaces" class="px-5 py-2.5 bg-gray-medium group-hover:bg-purple-accent text-white group-hover:text-black font-semibold rounded-xl text-xs transition duration-300 flex items-center gap-1">
+                Leer Entrada
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- SECCIÓN BANNER ACCESO A CONTACTO -->
+      <section class="max-w-7xl mx-auto px-6 md:px-12 py-24 border-t border-white/5">
+        <div class="reveal bg-gradient-to-r from-gray-medium to-purple-accent/10 border border-white/10 rounded-3xl p-10 md:p-16 text-center max-w-5xl mx-auto relative overflow-hidden shadow-[0_20px_45px_rgba(139,92,246,0.15)]">
+          <div class="absolute -right-16 -bottom-16 w-60 h-60 rounded-full bg-purple-accent/10 blur-3xl pointer-events-none"></div>
+          
+          <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-6 tracking-tight leading-tight max-w-3xl mx-auto">
+            ¿Tienes un proyecto en mente?<br>Démosle vida juntos.
+          </h2>
+          <p class="text-sm md:text-base text-gray-400 max-w-xl mx-auto mb-10 leading-relaxed">
+            Haga click abajo para cargar el formulario estructurado de contacto. Todas las respuestas llegarán directamente al buzón oficial paulinaleivat@gmail.com de forma rápida y segura.
+          </p>
+          <a href="contacto.html" class="inline-flex items-center gap-2 px-8 py-4 bg-purple-accent hover:bg-purple-hover text-white sm:text-black font-bold rounded-2xl text-sm transition-all duration-300 hover:shadow-[0_0_20px_rgba(139,92,246,0.4)] cursor-pointer">
+            Acceder al Formulario de Contacto
+            <svg class="w-4 h-4 text-white sm:text-black" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </a>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER GENERAL COMPARTIDO -->
+    <footer class="bg-primary border-t border-white/5 py-16 relative z-10">
+      <div class="max-w-7xl mx-auto px-6 md:px-12">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
+          
+          <!-- Lado Izquierdo: Branding Curado -->
+          <div class="text-center md:text-left">
+            <span class="font-extrabold text-xl tracking-wider text-white">PAULINA <span class="text-purple-accent">LEIVA</span></span>
+            <p class="text-xs text-gray-500 mt-2">UX/UI Portfolio & Creative Development. Hecho en 2026.</p>
+          </div>
+
+          <!-- Lado Derecho: Iconos Sociales con SVGs optimizados de Instagram, WhatsApp, Linkedin y Spotify -->
+          <div class="flex items-center gap-5 justify-center">
+            
+            <!-- Instagram -->
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-gray-medium flex items-center justify-center text-gray-400 hover:text-white hover:bg-purple-accent/20 border border-white/5 hover:border-purple-accent/30 transition-all duration-300" aria-label="Instagram">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+
+            <!-- WhatsApp -->
+            <a href="https://wa.me/something" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-gray-medium flex items-center justify-center text-gray-400 hover:text-white hover:bg-purple-accent/20 border border-white/5 hover:border-purple-accent/30 transition-all duration-300" aria-label="WhatsApp">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.063 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.458 5.704 1.459h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-gray-medium flex items-center justify-center text-gray-400 hover:text-white hover:bg-purple-accent/20 border border-white/5 hover:border-purple-accent/30 transition-all duration-300" aria-label="LinkedIn">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+
+            <!-- Spotify -->
+            <a href="https://spotify.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-gray-medium flex items-center justify-center text-gray-400 hover:text-white hover:bg-purple-accent/20 border border-white/5 hover:border-purple-accent/30 transition-all duration-300" aria-label="Spotify">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.586 14.424c-.18.295-.565.387-.86.207-2.377-1.454-5.37-1.783-8.893-.98-.336.075-.67-.14-.744-.476-.076-.336.14-.67.476-.743 3.856-.88 7.15-.51 9.814 1.127.295.18.387.563.207.865zm1.224-2.723c-.226.367-.707.487-1.074.26-2.72-1.672-6.87-2.157-10.076-1.183-.412.125-.845-.107-.97-.52-.125-.413.107-.847.52-.972 3.667-1.112 8.243-.57 11.34 1.332.368.227.487.706.26 1.083zm.106-2.822C14.004 8.54 10.03 8.41 7.733 9.108a.998.998 0 11-.571-1.88c2.637-.8 7.02-.65 10.334 1.317a.999.999 0 01-1 .572c-.106 0-.214-.025-.316-.086z"/>
+              </svg>
+            </a>
+
+          </div>
+        </div>
+
+        <div class="pt-8 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center gap-4">
+          <p class="text-xs text-gray-600">&copy; 2026 Paulina Leiva. Todos los derechos reservados.</p>
+          <div class="flex gap-6">
+            <a href="contacto.html" class="text-xs text-gray-600 hover:text-purple-accent transition">Formulario oficial de contacto</a>
+            <span class="text-gray-800">|</span>
+            <span class="text-xs text-purple-accent">Paulina Leiva UX/UI</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Archivo principal de Lógica/Animación de JS -->
+    <script type="module" src="/src/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "name": "Portafolio Paulina Leiva",
+  "description": "Portafolio interactivo con secciones de proyectos, blog personal y formulario de contacto optimizado.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
