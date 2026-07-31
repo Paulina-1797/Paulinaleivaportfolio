@@ -76,7 +76,7 @@ const PROJECTS_DATA = {
     challenge: "Adaptar y flexibilizar los lineamientos visuales mundiales de cuatro marcas con identidades y targets contrastantes de manera de responder ágilmente a calendarios dinámicos.",
     solution: "Creación de plantillas maestras y automatizaciones de retoque en Photoshop estructurando el color, alineación y composición tipográfica de manera consistente para banners promocionales e historias adaptativas.",
     results: "Incremento en el alcance de campañas mensuales y reducción del 40% en tiempos de preparación de creativos finales para subida a portales digitales.",
-    image: <img src="src/assets/images/crisalida tattoo.png"></img>>
+    image: <img src="src/assets/images/crisalida tattoo.png"></img>
   },
   "cattour": {
     title: "CAT TOUR: \"Crissalida Tattoo\"",
@@ -89,7 +89,7 @@ const PROJECTS_DATA = {
     challenge: "Plasmar la esencia urbana, de alta resistencia e histórica tanto de la marca Caterpillar como de la destreza del arte corporal de Cristina Monsalve, ejecutando sesiones fotográficas en vivo bajo un flujo dinámico de clientes.",
     solution: "Se estructuró una dirección de arte basada en iluminación de altos contrastes, capturando de forma precisa el proceso artesanal del tatuaje sobre piel y retratando la complicidad entre cliente y marca. La edición posterior en Lightroom acentuó sombras profundas y detalles industriales.",
     results: "Un compilado fotográfico de primera línea para uso en redes sociales y medios internos de Caterpillar, potenciando enérgicamente el engagement visual tras esta innovadora activación presencial.",
-    image: "https://images.unsplash.com/photo-1590246814883-57c511e76523?auto=format&fit=crop&w=1200&q=80"
+    image: "/src/assets/images/crisalida tattoo.png"
   }
 };
 
