@@ -11,7 +11,7 @@ const PROJECTS_DATA = {
     challenge: "Unificar un flujo interactivo complejo que enlaza la experiencia de escritorio del administrador con los recursos promocionales en redes sociales y la interfaz móvil intuitiva para los usuarios que realizan transacciones rápidas.",
     solution: "Se crearon wireframes modulares con Figma y guías de estilos unificadas para el área de marketing (email y redes de difusión) alineadas con un prototipo interactivo de alta fidelidad, aplicando acentos violeta para destacar acciones clave de cobro.",
     results: "Optimización de la tasa de conversión en pruebas de usabilidad, unificando la comunicación visual de la marca y reduciendo de manera drástica el tiempo de navegación en el flujo transaccional.",
-    image: "/src/assets/images/Recibopagos.png"
+    image: "assets/images/Recibopagos.png"
   },
   "vikamedical": {
     title: "VikaMedical",
@@ -76,7 +76,7 @@ const PROJECTS_DATA = {
     challenge: "Adaptar y flexibilizar los lineamientos visuales mundiales de cuatro marcas con identidades y targets contrastantes de manera de responder ágilmente a calendarios dinámicos.",
     solution: "Creación de plantillas maestras y automatizaciones de retoque en Photoshop estructurando el color, alineación y composición tipográfica de manera consistente para banners promocionales e historias adaptativas.",
     results: "Incremento en el alcance de campañas mensuales y reducción del 40% en tiempos de preparación de creativos finales para subida a portales digitales.",
-    image: "/src/assets/images/samsonite.png"
+    image: "assets/images/samsonite.png"
   },
   "cattour": {
     title: "CAT TOUR: \"Crissalida Tattoo\"",
@@ -89,7 +89,7 @@ const PROJECTS_DATA = {
     challenge: "Plasmar la esencia urbana, de alta resistencia e histórica tanto de la marca Caterpillar como de la destreza del arte corporal de Cristina Monsalve, ejecutando sesiones fotográficas en vivo bajo un flujo dinámico de clientes.",
     solution: "Se estructuró una dirección de arte basada en iluminación de altos contrastes, capturando de forma precisa el proceso artesanal del tatuaje sobre piel y retratando la complicidad entre cliente y marca. La edición posterior en Lightroom acentuó sombras profundas y detalles industriales.",
     results: "Un compilado fotográfico de primera línea para uso en redes sociales y medios internos de Caterpillar, potenciando enérgicamente el engagement visual tras esta innovadora activación presencial.",
-    image: "/src/assets/images/crisalida tattoo.png"
+    image: "assets/images/crisalida_tattoo.png"
   }
 };
 
