@@ -11,7 +11,7 @@ const PROJECTS_DATA = {
     challenge: "Unificar un flujo interactivo complejo que enlaza la experiencia de escritorio del administrador con los recursos promocionales en redes sociales y la interfaz móvil intuitiva para los usuarios que realizan transacciones rápidas.",
     solution: "Se crearon wireframes modulares con Figma y guías de estilos unificadas para el área de marketing (email y redes de difusión) alineadas con un prototipo interactivo de alta fidelidad, aplicando acentos violeta para destacar acciones clave de cobro.",
     results: "Optimización de la tasa de conversión en pruebas de usabilidad, unificando la comunicación visual de la marca y reduciendo de manera drástica el tiempo de navegación en el flujo transaccional.",
-    image: "assets/images/Recibopagos.png"
+    image: "/src/assets/images/Recibopagos.png"
   },
   "vikamedical": {
     title: "VikaMedical",
@@ -76,7 +76,7 @@ const PROJECTS_DATA = {
     challenge: "Adaptar y flexibilizar los lineamientos visuales mundiales de cuatro marcas con identidades y targets contrastantes de manera de responder ágilmente a calendarios dinámicos.",
     solution: "Creación de plantillas maestras y automatizaciones de retoque en Photoshop estructurando el color, alineación y composición tipográfica de manera consistente para banners promocionales e historias adaptativas.",
     results: "Incremento en el alcance de campañas mensuales y reducción del 40% en tiempos de preparación de creativos finales para subida a portales digitales.",
-    image: "assets/images/samsonite.png"
+    image: "/src/assets/images/samsonite.png"
   },
   "cattour": {
     title: "CAT TOUR: \"Crissalida Tattoo\"",
@@ -89,7 +89,7 @@ const PROJECTS_DATA = {
     challenge: "Plasmar la esencia urbana, de alta resistencia e histórica tanto de la marca Caterpillar como de la destreza del arte corporal de Cristina Monsalve, ejecutando sesiones fotográficas en vivo bajo un flujo dinámico de clientes.",
     solution: "Se estructuró una dirección de arte basada en iluminación de altos contrastes, capturando de forma precisa el proceso artesanal del tatuaje sobre piel y retratando la complicidad entre cliente y marca. La edición posterior en Lightroom acentuó sombras profundas y detalles industriales.",
     results: "Un compilado fotográfico de primera línea para uso en redes sociales y medios internos de Caterpillar, potenciando enérgicamente el engagement visual tras esta innovadora activación presencial.",
-    image: "assets/images/crisalida_tattoo.png"
+    image: "/src/assets/images/crisalida_tattoo.png"
   }
 };
 
@@ -721,6 +721,12 @@ function loadAllProjectsTemplate() {
   const container = document.getElementById("all-projects-grid");
   if (!container) return;
 
+  // If container already has static HTML project cards, keep them and re-run scroll animations
+  if (container.children.length > 0) {
+    initScrollAnimations();
+    return;
+  }
+
   let htmlContent = "";
   Object.keys(PROJECTS_DATA).forEach(key => {
     const item = PROJECTS_DATA[key];
@@ -730,9 +736,9 @@ function loadAllProjectsTemplate() {
 
     htmlContent += `
       <article class="reveal group flex flex-col bg-gray-medium border border-white/10 rounded-3xl overflow-hidden hover:border-purple-accent/50 transition-all duration-500 hover:shadow-[0_15px_30px_rgba(139,92,246,0.15)] hover:-translate-y-2">
-        <a href="proyecto.html?id=${key}" class="block h-60 overflow-hidden relative bg-black/40 flex items-center justify-center cursor-pointer">
-          <img src="${item.image}" alt="${item.title}" class="w-full h-full object-contain p-2 group-hover:scale-105 transition duration-700" loading="lazy" referrerPolicy="no-referrer" />
-          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-60 pointer-events-none"></div>
+        <a href="proyecto.html?id=${key}" class="block h-60 overflow-hidden relative cursor-pointer">
+          <img src="${item.image}" alt="${item.title}" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" loading="lazy" referrerPolicy="no-referrer" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-80"></div>
           <span class="absolute top-4 left-4 px-3 py-1 bg-black/60 backdrop-blur-md text-[10px] font-mono font-bold uppercase tracking-wider rounded-lg text-purple-light border border-white/10">${item.year}</span>
         </a>
         <div class="p-8 flex flex-col justify-between flex-grow">
