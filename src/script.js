@@ -11,7 +11,7 @@ const PROJECTS_DATA = {
     challenge: "Unificar un flujo interactivo complejo que enlaza la experiencia de escritorio del administrador con los recursos promocionales en redes sociales y la interfaz móvil intuitiva para los usuarios que realizan transacciones rápidas.",
     solution: "Se crearon wireframes modulares con Figma y guías de estilos unificadas para el área de marketing (email y redes de difusión) alineadas con un prototipo interactivo de alta fidelidad, aplicando acentos violeta para destacar acciones clave de cobro.",
     results: "Optimización de la tasa de conversión en pruebas de usabilidad, unificando la comunicación visual de la marca y reduciendo de manera drástica el tiempo de navegación en el flujo transaccional.",
-    image: "/src/assets/images/recibopagos_diseno.png"
+    image: <img src="src/assets/images/crisalida tattoo.png"></img>
   },
   "vikamedical": {
     title: "VikaMedical",
@@ -76,7 +76,7 @@ const PROJECTS_DATA = {
     challenge: "Adaptar y flexibilizar los lineamientos visuales mundiales de cuatro marcas con identidades y targets contrastantes de manera de responder ágilmente a calendarios dinámicos.",
     solution: "Creación de plantillas maestras y automatizaciones de retoque en Photoshop estructurando el color, alineación y composición tipográfica de manera consistente para banners promocionales e historias adaptativas.",
     results: "Incremento en el alcance de campañas mensuales y reducción del 40% en tiempos de preparación de creativos finales para subida a portales digitales.",
-    image: <img src="src/assets/images/crisalida tattoo.png"></img>
+    image: "/src/assets/images/recibopagos_diseno.png"
   },
   "cattour": {
     title: "CAT TOUR: \"Crissalida Tattoo\"",
