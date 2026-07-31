@@ -169,15 +169,17 @@ document.addEventListener("DOMContentLoaded", () => {
   initContactForm();
   initCVDownload();
   
-  // Detect current page file name and run appropriate template loader
-  const pathname = window.location.pathname;
-  if (pathname.includes("proyecto.html")) {
-    loadProjectTemplate();
-  } else if (pathname.includes("proyectos.html")) {
+  // Detect current page elements and run appropriate template loader
+  if (document.getElementById("all-projects-grid")) {
     loadAllProjectsTemplate();
-  } else if (pathname.includes("blog.html")) {
+  }
+  if (document.getElementById("p-title")) {
+    loadProjectTemplate();
+  }
+  if (document.getElementById("all-blog-posts-grid")) {
     loadAllBlogPostsTemplate();
-  } else if (pathname.includes("articulo.html")) {
+  }
+  if (document.getElementById("b-title")) {
     loadBlogTemplate();
   }
 });
@@ -722,21 +724,23 @@ function loadAllProjectsTemplate() {
   let htmlContent = "";
   Object.keys(PROJECTS_DATA).forEach(key => {
     const item = PROJECTS_DATA[key];
-    const techTags = item.technologies.map(tech => 
+    const techTags = item.technologies ? item.technologies.map(tech => 
       `<span class="px-2 py-0.5 bg-black/40 border border-white/5 rounded-lg text-[10px] font-mono text-purple-light">${tech}</span>`
-    ).join("");
+    ).join("") : "";
 
     htmlContent += `
       <article class="reveal group flex flex-col bg-gray-medium border border-white/10 rounded-3xl overflow-hidden hover:border-purple-accent/50 transition-all duration-500 hover:shadow-[0_15px_30px_rgba(139,92,246,0.15)] hover:-translate-y-2">
-        <div class="h-60 overflow-hidden relative">
+        <a href="proyecto.html?id=${key}" class="block h-60 overflow-hidden relative cursor-pointer">
           <img src="${item.image}" alt="${item.title}" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" loading="lazy" referrerPolicy="no-referrer" />
           <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-80"></div>
           <span class="absolute top-4 left-4 px-3 py-1 bg-black/60 backdrop-blur-md text-[10px] font-mono font-bold uppercase tracking-wider rounded-lg text-purple-light border border-white/10">${item.year}</span>
-        </div>
+        </a>
         <div class="p-8 flex flex-col justify-between flex-grow">
           <div class="space-y-4">
             <span class="text-xs font-mono text-purple-light uppercase tracking-wide block">${item.category}</span>
-            <h3 class="text-2xl font-bold text-white tracking-tight group-hover:text-purple-accent transition-colors duration-300 text-left">${item.title}</h3>
+            <a href="proyecto.html?id=${key}" class="block">
+              <h3 class="text-2xl font-bold text-white tracking-tight group-hover:text-purple-accent transition-colors duration-300 text-left">${item.title}</h3>
+            </a>
             <p class="text-sm text-gray-400 font-light leading-relaxed mb-4 text-left">
               ${item.summary}
             </p>
