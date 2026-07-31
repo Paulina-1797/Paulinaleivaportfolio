@@ -332,9 +332,9 @@ function loadProjectTemplate() {
         const item = PROJECTS_DATA[key];
         relatedHtml += `
           <a href="proyecto.html?id=${key}" class="group block bg-gray-medium border border-white/10 rounded-2xl overflow-hidden hover:border-purple-accent/50 transition duration-500 hover:shadow-[0_10px_35px_-10px_rgba(139,92,246,0.3)]">
-            <div class="h-48 overflow-hidden relative">
-              <img src="${item.image}" alt="${item.title}" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" loading="lazy" referrerPolicy="no-referrer">
-              <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60"></div>
+            <div class="h-48 overflow-hidden relative bg-black/40 flex items-center justify-center">
+              <img src="${item.image}" alt="${item.title}" class="w-full h-full object-contain p-2 group-hover:scale-105 transition duration-700" loading="lazy" referrerPolicy="no-referrer">
+              <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60 pointer-events-none"></div>
             </div>
             <div class="p-6">
               <span class="text-xs font-mono text-purple-light uppercase tracking-wider block mb-2">${item.category}</span>
@@ -730,9 +730,9 @@ function loadAllProjectsTemplate() {
 
     htmlContent += `
       <article class="reveal group flex flex-col bg-gray-medium border border-white/10 rounded-3xl overflow-hidden hover:border-purple-accent/50 transition-all duration-500 hover:shadow-[0_15px_30px_rgba(139,92,246,0.15)] hover:-translate-y-2">
-        <a href="proyecto.html?id=${key}" class="block h-60 overflow-hidden relative cursor-pointer">
-          <img src="${item.image}" alt="${item.title}" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" loading="lazy" referrerPolicy="no-referrer" />
-          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-80"></div>
+        <a href="proyecto.html?id=${key}" class="block h-60 overflow-hidden relative bg-black/40 flex items-center justify-center cursor-pointer">
+          <img src="${item.image}" alt="${item.title}" class="w-full h-full object-contain p-2 group-hover:scale-105 transition duration-700" loading="lazy" referrerPolicy="no-referrer" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-60 pointer-events-none"></div>
           <span class="absolute top-4 left-4 px-3 py-1 bg-black/60 backdrop-blur-md text-[10px] font-mono font-bold uppercase tracking-wider rounded-lg text-purple-light border border-white/10">${item.year}</span>
         </a>
         <div class="p-8 flex flex-col justify-between flex-grow">
