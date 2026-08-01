@@ -11,7 +11,7 @@ const PROJECTS_DATA = {
     challenge: "Unificar un flujo interactivo complejo que enlaza la experiencia de escritorio del administrador con los recursos promocionales en redes sociales y la interfaz móvil intuitiva para los usuarios que realizan transacciones rápidas.",
     solution: "Se crearon wireframes modulares con Figma y guías de estilos unificadas para el área de marketing (email y redes de difusión) alineadas con un prototipo interactivo de alta fidelidad, aplicando acentos violeta para destacar acciones clave de cobro.",
     results: "Optimización de la tasa de conversión en pruebas de usabilidad, unificando la comunicación visual de la marca y reduciendo de manera drástica el tiempo de navegación en el flujo transaccional.",
-    image: "/assets/images/Recibopagos.png"
+    image: "/assets/images/proyecto_recibopagos.png"
   },
   "vikamedical": {
     title: "VikaMedical",
@@ -24,7 +24,7 @@ const PROJECTS_DATA = {
     challenge: "Organizar la densidad informática de registros clínicos, credenciales de profesionales y el módulo interactivo de agendamiento sin comprometer la rapidez visual.",
     solution: "Se estructuraron mapas de sitio y wireframes semánticos en Figma en escala de grises con acentos de jerarquía tipográfica, facilitando una lectura fluida guiada por patrones de UI médicos validados.",
     results: "La arquitectura validada sirvió de base sólida para el desarrollo frontend nativo sin necesidad de constantes iteraciones en fase de código.",
-    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=80"
+    image: "/assets/images/proyecto_vikamedical.png"
   },
   "emaresa": {
     title: "Emaresa",
@@ -37,7 +37,7 @@ const PROJECTS_DATA = {
     challenge: "Sintetizar grandes volúmenes de datos económicos, estadísticos e industriales densos en un diseño editorial interactivo y legible con un acabado vanguardista, óptimo para distribución digital e impresa de alto calibre.",
     solution: "Estructuración de retículas tipográficas minimalistas en base a tipografías Sans-Serif nítidas, infografías vectoriales limpias y una cuidadosa postproducción fotográfica en Photoshop para las portadas y separadores corporativos.",
     results: "Distribución exitosa de la memoria a nivel país, mejorando la percepción de transparencia financiera y fortaleciendo la imagen de marca corporativa ante accionistas.",
-    image: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=1200&q=80"
+    image: "/assets/images/proyecto_recibopagos.png"
   },
   "hauk": {
     title: "Hauk \"Huellas del pueblo Selk'Nam\"",
@@ -63,7 +63,7 @@ const PROJECTS_DATA = {
     challenge: "Capturar el misticismo, texturas, devoción comunitaria y plasmarlo en un formato digital moderno que acerque la riqueza religiosa austral a nuevos públicos.",
     solution: "Se propuso un lienzo oscuro con fotografías en tonos púrpuras y grises ceniza complementado por transiciones de scroll poéticas que despliegan anécdotas, mapas náuticos e historias de la isla.",
     results: "Presentado de manera destacada en certámenes de diseño territorial con excelentes comentarios de curadores chilenos.",
-    image: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1200&q=80"
+    image: "/assets/images/proyecto_nazareno.png"
   },
   "samsonite": {
     title: "Samsonite",
@@ -89,7 +89,7 @@ const PROJECTS_DATA = {
     challenge: "Plasmar la esencia urbana, de alta resistencia e histórica tanto de la marca Caterpillar como de la destreza del arte corporal de Cristina Monsalve, ejecutando sesiones fotográficas en vivo bajo un flujo dinámico de clientes.",
     solution: "Se estructuró una dirección de arte basada en iluminación de altos contrastes, capturando de forma precisa el proceso artesanal del tatuaje sobre piel y retratando la complicidad entre cliente y marca. La edición posterior en Lightroom acentuó sombras profundas y detalles industriales.",
     results: "Un compilado fotográfico de primera línea para uso en redes sociales y medios internos de Caterpillar, potenciando enérgicamente el engagement visual tras esta innovadora activación presencial.",
-    image: "/assets/images/crisalida_tattoo.png"
+    image: "/assets/images/proyecto_criss.png"
   }
 };
 
