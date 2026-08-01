@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paulina Leiva | Blog, Ideas & Diseño UX/UI</title>
+    
+    <!-- Meta Etiquetas de SEO -->
+    <meta name="description" content="Lee los últimos artículos, lecciones y perspectivas sobre psicología del color, flujos creativos modulares y accesibilidad digital por Paulina Leiva." />
+    <meta name="keywords" content="Paulina Leiva, Blog, Diseño, UX/UI, Psicología del Color, Front-End, Accesibilidad" />
+    <meta name="author" content="Paulina Leiva" />
+
+    <!-- Archivo principal de Estilos -->
+    <link rel="stylesheet" href="/src/index.css" />
+  </head>
+  <body class="bg-gray-dark text-white font-sans antialiased selection:bg-purple-accent selection:text-white relative">
+    
+    <!-- Efecto ambiental superior de iluminación violeta -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[600px] purple-gradient-glow pointer-events-none z-0"></div>
+
+    <!-- NAVBAR PRINCIPAL -->
+    <header id="main-header" class="fixed top-0 left-0 w-full z-40 transition-all duration-500 py-5 bg-transparent">
+      <div class="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
+        
+        <!-- Logo -->
+        <a href="index.html" class="group flex items-center gap-2 z-50">
+          <span class="w-10 h-10 bg-purple-accent hover:bg-purple-hover text-black font-extrabold flex items-center justify-center rounded-xl text-xl transition-all duration-300 shadow-[0_0_15px_rgba(139,92,246,0.3)]">PL</span>
+          <span class="font-bold tracking-wider text-xl text-white group-hover:text-purple-accent transition-colors duration-300">PAULINA <span class="text-purple-accent">LEIVA</span></span>
+        </a>
+
+        <!-- Enlaces en Escritorio -->
+        <nav class="hidden md:flex items-center gap-6 lg:gap-8">
+          <a href="index.html#inicio" class="text-sm font-medium hover:text-purple-accent transition duration-300">Inicio</a>
+          <a href="index.html#sobre-mi" class="text-sm font-medium hover:text-purple-accent transition duration-300">Sobre Mí</a>
+          <a href="proyectos.html" class="text-sm font-medium hover:text-purple-accent transition duration-300">Proyectos</a>
+          <a href="blog.html" class="text-sm font-semibold text-purple-accent transition duration-300">Blog</a>
+          <a href="contacto.html" class="text-sm font-medium text-purple-light hover:text-purple-accent transition duration-300 flex items-center gap-1">
+            Contacto
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </a>
+          <!-- Botón de Descargar CV junto al menú -->
+          <a href="#" class="cv-download-btn inline-flex items-center gap-2 px-4 py-2 bg-purple-accent hover:bg-purple-hover text-black font-semibold rounded-xl text-xs tracking-wide uppercase transition-all duration-300 shadow-[0_0_15px_rgba(139,92,246,0.3)] hover:scale-105 cursor-pointer">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"></path>
+            </svg>
+            Descargar CV
+          </a>
+        </nav>
+
+        <!-- Botón Menú Móvil -->
+        <div class="flex items-center gap-3">
+          <a href="#" class="cv-download-btn md:hidden inline-flex items-center gap-1.5 px-3 py-1.5 bg-purple-accent hover:bg-purple-hover text-black font-bold rounded-xl text-[11px] uppercase transition cursor-pointer shadow-[0_0_10px_rgba(139,92,246,0.3)]">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"></path>
+            </svg>
+            CV
+          </a>
+          <button id="burger-btn" class="md:hidden p-2 text-white bg-gray-medium/80 border border-white/10 rounded-xl hover:bg-purple-accent/10 transition z-50 cursor-pointer" aria-label="Menú">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Menú Desplegable Móvil -->
+      <div id="mobile-menu" class="fixed inset-x-0 top-0 bg-gray-medium/98 backdrop-blur-lg border-b border-white/5 pt-24 pb-8 px-6 transition-all duration-500 transform -translate-y-full opacity-0 pointer-events-none flex flex-col gap-5 z-30">
+        <a href="index.html#inicio" class="text-lg font-medium py-2 border-b border-white/5 hover:text-purple-accent transition">Inicio</a>
+        <a href="index.html#sobre-mi" class="text-lg font-medium py-2 border-b border-white/5 hover:text-purple-accent transition">Sobre Mí</a>
+        <a href="proyectos.html" class="text-lg font-medium py-2 border-b border-white/5 hover:text-purple-accent transition">Proyectos</a>
+        <a href="blog.html" class="text-lg font-semibold py-2 border-b border-white/5 text-purple-accent transition">Blog</a>
+        <a href="contacto.html" class="text-lg font-semibold py-2 border-b border-white/5 text-purple-accent flex items-center justify-between">
+          Área de Contacto
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </a>
+        <a href="#" class="cv-download-btn w-full mt-4 py-3.5 bg-purple-accent hover:bg-purple-hover text-black font-semibold rounded-xl text-center flex items-center justify-center gap-2 text-sm transition">
+          Descargar Currículum (PDF)
+        </a>
+      </div>
+    </header>
+
+    <!-- CONTENT -->
+    <main class="relative z-10 pt-32 pb-24">
+      
+      <!-- HERO/ENCABEZADO DE SECCIÓN -->
+      <section class="max-w-7xl mx-auto px-6 md:px-12 pt-12 pb-16">
+        <div class="reveal reveal-left space-y-4 max-w-3xl">
+          <a href="index.html" class="inline-flex items-center gap-2 text-xs font-mono text-gray-500 hover:text-purple-accent transition mb-4 group">
+            <svg class="w-4 h-4 transform group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+            </svg>
+            Volver al Inicio
+          </a>
+          <span class="text-xs font-mono font-bold tracking-widest uppercase text-purple-accent block">BITÁCORA DE PERSPECTIVAS</span>
+          <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight">
+            Todas las Entradas del Blog
+          </h1>
+          <p class="text-lg text-gray-400 font-light leading-relaxed">
+            Explora mis artículos, análisis de usabilidad y guías avanzadas diseñadas para unir la estética sofisticada, la psicología de interacción del color y las metodologías eficientes de desarrollo de software.
+          </p>
+        </div>
+      </section>
+
+      <!-- SECCIÓN GENERAL DE GRID -->
+      <section class="max-w-7xl mx-auto px-6 md:px-12 py-8">
+        <!-- Grid dinámico rellenado por JS -->
+        <div id="all-blog-posts-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Dinámico -->
+        </div>
+      </section>
+
+      <!-- CTA BANNER CONECTIVO -->
+      <section class="max-w-7xl mx-auto px-6 md:px-12 py-20">
+        <div class="reveal bg-gradient-to-r from-gray-medium to-gray-medium/40 border border-white/10 rounded-3xl p-8 md:p-16 flex flex-col lg:flex-row items-center justify-between gap-8 hover:border-purple-accent/30 transition-all duration-500">
+          <div class="space-y-4 text-center lg:text-left">
+            <h3 class="text-2xl md:text-4xl font-extrabold text-white tracking-tight">¿Tienes consultas o quieres colaborar?</h3>
+            <p class="text-sm md:text-base text-gray-400 font-light max-w-xl">
+              Suscríbete para discutir sobre diseño interactivo o hablemos de cómo tu marca puede alcanzar una jerarquía estética disruptiva.
+            </p>
+          </div>
+          <a href="contacto.html" class="w-full sm:w-auto px-8 py-4 bg-purple-accent hover:bg-purple-hover text-white sm:text-black font-semibold rounded-xl text-center text-sm transition-all duration-300 hover:shadow-[0_0_20px_rgba(139,92,246,0.35)] cursor-pointer">
+            Hablemos de tu Proyecto
+          </a>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-white/5 bg-gray-dark py-12 relative z-10">
+      <div class="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-6">
+        
+        <!-- Izquierda: Copyright -->
+        <p class="text-gray-500 font-mono text-xs text-center md:text-left">
+          &copy; 2026 Paulina Leiva. Hecho con pasión y detalles violetas.
+        </p>
+
+        <!-- Derecha: Iconos Sociales -->
+        <div class="flex items-center gap-4">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-purple-accent transition font-mono text-xs">Instagram</a>
+          <a href="https://wa.me/something" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-purple-accent transition font-mono text-xs">WhatsApp</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-purple-accent transition font-mono text-xs">LinkedIn</a>
+          <a href="https://spotify.com" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-purple-accent transition font-mono text-xs">Spotify</a>
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- Scripts Core -->
+    <script type="module" src="/src/script.js"></script>
+  </body>
+</html>
