@@ -76,7 +76,7 @@ const PROJECTS_DATA = {
     challenge: "Adaptar y flexibilizar los lineamientos visuales mundiales de cuatro marcas con identidades y targets contrastantes de manera de responder ágilmente a calendarios dinámicos.",
     solution: "Creación de plantillas maestras y automatizaciones de retoque en Photoshop estructurando el color, alineación y composición tipográfica de manera consistente para banners promocionales e historias adaptativas.",
     results: "Incremento en el alcance de campañas mensuales y reducción del 40% en tiempos de preparación de creativos finales para subida a portales digitales.",
-    image: "/assets/images/samsonite.png"
+    image: "/assets/images/proyecto_samsonite.png"
   },
   "cattour": {
     title: "CAT TOUR: \"Crissalida Tattoo\"",
